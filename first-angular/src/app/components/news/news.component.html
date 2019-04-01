@@ -1,1 +1,24 @@
-<h2>我是新闻组件</h2>
+<h2>{{ title }}</h2>
+
+<br>
+<h3 [title]='student.age'>{{student.name}}</h3>
+{{student.age}}
+
+{{html}}
+<div [innerHtml]='html' class='red' >
+
+</div>
+
+<hr>
+
+<ul>
+    <li *ngFor="let item of list">
+        {{ item }}
+    </li>
+</ul>
+<hr>
+<ol>
+    <li *ngFor="let item of arr">
+        {{item}}
+    </li>
+</ol>

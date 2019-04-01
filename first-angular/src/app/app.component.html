@@ -4,7 +4,9 @@
     Welcome to {{ title }}!
   </h1>
 
-  <app-news></app-news>
-  <app-home></app-home>
+  <header class="header">
+    <a [routerLink]="[ '/home' ]" routerLinkActive="active">首页</a>
+    <a routerLink = "/news" routerLinkActive="active">新闻组件</a>
+  </header>
 
 <router-outlet></router-outlet>
